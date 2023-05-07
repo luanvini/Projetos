@@ -1,85 +1,92 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+    background-color: darkorange;
+    text-align: center;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-
-    background-color: #161619;
+h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(109, 53, 33);
 }
 
 section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px 45px;
-    background: rgb(25, 23, 30);
-    width: 500px;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-color: rgba(238, 122, 19, 0.676);
+    display: inline-table;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 110px;
+    cursor: default;
 }
 
-section h2 {
-    color: rgb(174, 21, 100);
-    font-size: 2.5rem;
-    margin: 2rem;
-
+header {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 50px;
 }
 
-section form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 
-section label {
-    color: rgb(208, 28, 121);
-    font-size: 17px;
-    margin-bottom: 4px;
-}
 
-section input {
+button {
+    background-color: brown;
+    width: 100px;
     padding: 10px;
-    outline: none;
-    margin-bottom: 20px;
-    font-size: 15px;
-    transition: 0.5s;
-}
-
-section input:focus {
-    border-radius: 16px;
-}
-
-section textarea {
-    padding: 10px;
-    outline: none;
-    border: 0;
-    font-size: 15px;
-    margin-bottom: 30px;
-    transition: all 0.5s;
-}
-
-section textarea:focus {
-    border-radius: 16px;
-}
-
-section button {
-    padding: 10px;
-    background: transparent;
-    border: 2px solid rgba(253, 41, 176, 0.631);
+    border-radius: 10px;
     color: aliceblue;
-    transition: all 1s;
-    margin-bottom: 20px;
+    border-style: solid;
+    cursor: pointer;
 }
 
-section button:hover {
-    background: #d7d7dc;
-    color: #161619;
-    border-radius: 16px;
+button:hover {
+    background-color: rgb(153, 9, 9);
+}
+
+button:active {
+        transform:scale(0.9)
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+input {
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    font-size: 15px;
+    background-color:rgb(246, 169, 106);
+    cursor:text;
+}
+
+input:focus{
+    outline: 2px solid brown;
+}
+
+input:read-only {
+    cursor: default;
+}
+
+#resultadoData {
+    width: 140px;
+    padding: 35px;
+    outline: none;
+    border-radius: 15px;
+    color: black;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+footer {
+    padding: 10px;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.671);
 }

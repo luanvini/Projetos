@@ -5,27 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Idade</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>Formulário</title>
+
+    <script src="calculaidade.js" defer></script>
 </head>
 
 <body>
+
     <section>
-        <h2>Contatos</h2>
-        <form action="agradecimento.html" method='post' id="envio"></form>
-        <label>Nome</label>
-        <input type="text" name='nome' placeholder="Digite seu nome: " autocomplete="off">
-        <label>Email</label>
-        <input type="email" name='email' placeholder="Digite seu Email: ">
-        <label>Assunto</label>
-        <input type="text" name='assunto' placeholder="Digite o Assunto: ">
-        <label>Menssagem</label>
-        <textarea name="menssage" cols="30" rows="10" placeholder="Digite sua Menssagem:"></textarea>
-        <button type="submit">Enviar</button>
+
+        <header>Calcular Idade</header>
+        
+        <div>
+            <h4>Digite os dados solicitados</h4>
+        </div>
+
+        <div>
+            <p>Data de nascimento</p>
+            <input type="date" name="data1" id="nascimento">
+        </div>
+
+        <div>
+            <p></p>
+            <button onclick="calculando()">Calcular</button>
+        </div>
+
+        <div>
+            <p>Resultado</p>
+            <input type="text" readonly name="dataResultado" id="resultadoData">
+        </div>
+
+        <footer>
+            <a href="https://github.com/luanvini?tab=repositories">©Developed by Luan Vinicius.</a>
+        </footer>
 
     </section>
-    
-<script src="Envio.js"></script>
+
+
 </body>
 
 </html>
